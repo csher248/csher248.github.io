@@ -2,15 +2,21 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Contact | Connor Sheridan</title>
   <link rel="stylesheet" href="css/main.css" />
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
   <script src="js/contact.js" defer></script>
+  <script src="js/includes.js" defer></script>
 </head>
 <body>
-  <header><h1>Contact Me</h1></header>
+  <header></header>
+
+  <nav></nav>
+
   <main class="contact-section">
+    <h1>Contact Me</h1>
     <form action="https://formspree.io/f/xovenkdp" method="POST">
       <input type="hidden" name="_subject" value="New Contact Message">
       <input type="hidden" name="_next" value="thankyou.html">
@@ -26,6 +32,7 @@
     </form>
     <div id="map" style="height: 400px; width: 100%; margin-top: 1rem;"></div>
   </main>
-  <footer><p>© 2025 Connor Sheridan</p></footer>
+  
+  <footer></footer>
 </body>
 </html>
