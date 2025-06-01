@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
   const facts = [
-    "I started university when I was a wee lad of 15 years.",
-    "I have a pet sparrow.",
+    "I graduated Michigan State Univeristy in 2025.",
+    "I have a pet cat named Sam.",
     "I write poetry."
   ];
   const factEl = document.getElementById("fun-fact");
