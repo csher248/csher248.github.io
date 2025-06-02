@@ -1,8 +1,8 @@
 function loadHTML(selector, file) {
     fetch(file)
       .then(response => response.text())
-      .then(data => {
-        document.querySelector(selector).innerHTML = data;
+      .then(html => {
+        document.querySelector(selector).innerHTML = html;
       });
 }
   

@@ -1,88 +1,185 @@
-/* Footer.css */
-footer {
-  position: relative;
-  bottom: 0;
-  width: 100%;
-  padding: 1rem;
-  background-color: #00471B;
-  color: white;
-  text-align: center;
-}
-
-/* Header.css */
-header {
-  background-color: #00471B;
-  color: white;
-  padding: 1.5rem;
-  text-align: center;
-}
-
-/* Navbar.css */
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #222;
-}
-
-.links a img {
-  width: 32px;
-  height: 32px;
-  margin-left: 0.5rem;
-}
-
-/* Resume.css */
-iframe {
-  border: none;
-}
-
-/* Main.css */
-body {
-  font-family: 'Segoe UI', sans-serif;
+/* Base Layout */
+html, body {
+  height: 100%;
   margin: 0;
   padding: 0;
+  font-family: 'Segoe UI', sans-serif;
   background-color: #f9f9f9;
   color: #333;
-}
-
-header {
-  background-color: #00471B;
-  color: white;
-  text-align: center;
-  padding: 1.5rem;
-}
-
-nav {
   display: flex;
-  justify-content: center;
-  background-color: #222;
-  padding: 1rem;
-  gap: 2rem;
+  flex-direction: column;
 }
 
-nav a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-nav a:hover {
-  text-decoration: underline;
+body {
+  padding-top: 80px; 
 }
 
 main {
+  flex: 1;
   padding: 2rem;
-  text-align: center;
 }
 
-footer {
+/* ========== NAVBAR ========== */
+.site-nav {
+  background-color: #111;
+  color: white;
+  padding: 1rem 2rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.logo a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.nav-links li a:hover {
+  text-decoration: underline;
+}
+
+/* ========== FOOTER ========== */
+.site-footer {
   background-color: #00471B;
   color: white;
   text-align: center;
-  padding: 1rem;
-  margin-top: 2rem;
+  padding: 1.5rem;
+  margin-top: 3rem;
 }
 
+/* ========== HOMEPAGE (index.html) ========== */
+.home-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 2rem;
+  gap: 3rem;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.home-left,
+.home-right {
+  flex: 1 1 400px;
+}
+
+.profile-photo {
+  width: 250px;
+  border-radius: 50%;
+  border: 5px solid #00471B;
+  display: block;
+  margin: 0 auto 1rem;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 1.25rem;
+}
+
+.social-links img {
+  width: 40px;
+  height: 40px;
+  transition: transform 0.2s ease;
+}
+
+.social-links img:hover {
+  transform: scale(1.1);
+}
+
+.home-right h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.home-right h2 {
+  font-size: 1.25rem;
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+.highlight {
+  color: #00471B;
+}
+
+/* ========== CONTACT PAGE ========== */
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 2rem;
+}
+
+.contact-form,
+.contact-map {
+  flex: 1 1 400px;
+  max-width: 600px;
+}
+
+.contact-form form {
+  display: grid;
+  gap: 1rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  width: 100%;
+  border-radius: 4px;
+}
+
+.contact-form button {
+  padding: 0.75rem;
+  background-color: #00471B;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.leaflet-container {
+  height: 400px;
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* ========== RESUME PAGE ========== */
+iframe {
+  border: none;
+  width: 100%;
+}
+
+/* ========== Misc ========== */
 img.profile {
   width: 200px;
   height: 200px;
@@ -91,19 +188,17 @@ img.profile {
   margin-top: 1rem;
 }
 
-/* Header/Navbar */
-.site-header {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  background-color: #00471B;
-  color: white;
-  z-index: 999;
-  transition: transform 0.3s ease-in-out;
+#comments-container li {
+  background-color: #f1f1f1;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border-radius: 8px;
 }
-.site-header.hidden {
-  transform: translateY(-100%);
-}
-body {
-  padding-top: 100px;
+
+.about-section {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  line-height: 1.6;
+  text-align: left;
 }

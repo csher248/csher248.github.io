@@ -17,24 +17,23 @@
     <nav></nav>
   </div>
 
-  <main class="contact-section">
-    <h1>Contact Me</h1>
-    <form action="https://formspree.io/f/xovenkdp" method="POST">
-      <input type="hidden" name="_subject" value="New Contact Message">
-      <input type="hidden" name="_next" value="thankyou.html">
-      <label>Name:</label>
-      <input type="text" name="name" required />
-      <label>Email:</label>
-      <input type="email" name="email" required />
-      <label>Subject:</label>
-      <input type="text" name="subject" required />
-      <label>Description:</label>
-      <textarea name="message" rows="6" required></textarea>
-      <button type="submit">Send</button>
-    </form>
-    <div id="map" style="height: 400px; width: 100%; margin-top: 1rem;"></div>
-  </main>
+  <main class="contact-container">
+    <section class="contact-form">
+      <h1>Contact Me</h1>
+      <form action="https://formspree.io/f/yourID" method="POST">
+        <input type="text" name="name" placeholder="Name" required />
+        <input type="email" name="email" placeholder="Email" required />
+        <input type="text" name="subject" placeholder="Subject" />
+        <textarea name="message" placeholder="Message" rows="5" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </section>
 
+    <section class="contact-map">
+      <div id="map" class="leaflet-container"></div>
+    </section>
+  </main>
+  
   <footer></footer>
 </body>
 </html>
