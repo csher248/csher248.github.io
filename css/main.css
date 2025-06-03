@@ -65,14 +65,14 @@ main {
 
 /* ========== FOOTER ========== */
 .site-footer {
-  background-color: #00471B;
+  background-color: #1c1c1c;
   color: white;
   text-align: center;
   padding: 1.5rem;
   margin-top: 3rem;
 }
 
-/* ========== HOMEPAGE (index.html) ========== */
+/* ========== HOMEPAGE ========== */
 .home-container {
   display: flex;
   flex-wrap: wrap;
@@ -92,7 +92,7 @@ main {
 .profile-photo {
   width: 250px;
   border-radius: 50%;
-  border: 5px solid #00471B;
+  border: 5px solid #1c1c1c;
   display: block;
   margin: 0 auto 1rem;
 }
@@ -270,4 +270,17 @@ img.profile {
 .scroll-fade.visible {
   opacity: 1;
   transform: translateY(0);
+}
+
+/* ========== Resume ========== */
+.resume-section {
+  max-width: 1000px;
+  margin: auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.resume-section iframe {
+  border: 1px solid #ccc;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
 }
