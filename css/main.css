@@ -63,6 +63,12 @@ main {
   text-decoration: underline;
 }
 
+.nav-social img {
+  width: 24px;
+  height: 24px;
+  margin-left: 1rem;
+}
+
 /* ========== FOOTER ========== */
 .site-footer {
   background-color: #1c1c1c;
@@ -91,8 +97,10 @@ main {
 
 .profile-photo {
   width: 250px;
-  border-radius: 50%;
-  border: 5px solid #1c1c1c;
+  height: 250px;
+  border-radius: 12px;
+  border: 4px solid #1c1c1c;
+  object-fit: cover;
   display: block;
   margin: 0 auto 1rem;
 }
@@ -160,7 +168,7 @@ main {
 
 .contact-form button {
   padding: 0.75rem;
-  background-color: #00471B;
+  background-color: #1c1c1c;
   color: white;
   border: none;
   border-radius: 4px;
@@ -189,7 +197,7 @@ img.profile {
 }
 
 #comments-container li {
-  background-color: #f1f1f1;
+  background-color: #1c1c1c;
   margin-bottom: 1rem;
   padding: 1rem;
   border-radius: 8px;
@@ -210,7 +218,7 @@ img.profile {
   color: #222;
   background-color: #f1f1f1;
   padding: 1rem 2rem;
-  border-left: 4px solid #00471B;
+  border-left: 4px solid #1c1c1c;
   max-width: 600px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.05);
 }
@@ -240,7 +248,7 @@ img.profile {
 
 .skill-category h3 {
   margin-bottom: 1rem;
-  color: #00471B;
+  color: #1c1c1c;
 }
 
 .skill-category ul {
@@ -257,7 +265,7 @@ img.profile {
 }
 
 .skill-category i {
-  color: #00471B;
+  color: #1c1c1c;
 }
 
 /* ========== Scroll Fade-In Animation ========== */
@@ -272,15 +280,33 @@ img.profile {
   transform: translateY(0);
 }
 
-/* ========== Resume ========== */
-.resume-section {
-  max-width: 1000px;
-  margin: auto;
+.card {
+  background-color: #ffffff;
+  border-radius: 12px;
   padding: 2rem;
-  text-align: center;
+  margin: 1.5rem auto;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  max-width: 1000px;
+  width: 100%;
+  transition: box-shadow 0.3s ease;
 }
 
-.resume-section iframe {
-  border: 1px solid #ccc;
-  box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+.card:hover {
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+}
+
+.profile-photo-large {
+  width: 250px;
+  border-radius: 12px;
+  display: block;
+  margin: 0 auto;
+}
+
+.about-card, .photo-card, .fun-fact-box {
+  max-width: 800px;
+  margin: auto;
+}
+
+.fun-fact-box {
+  text-align: center;
 }
