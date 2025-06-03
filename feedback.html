@@ -15,22 +15,35 @@
     <nav></nav>
   </div>
 
-  <main class="contact-container">
-    <section class="contact-form">
-      <h1>Feedback</h1>
+  <main>
+    <div class="card">
+      <h2>Have Feedback?</h2>
+      <p>
+        Let me know how I can improve this site or if something's broken.
+        Your input helps me make the experience better!
+      </p>
+    </div>
+  
+    <div class="card" style="margin-top: 2rem;">
       <form id="feedback-form">
-        <input type="text" name="name" placeholder="Your Name" required />
-        <input type="email" name="email" placeholder="Your Email" required />
-        <textarea name="comment" placeholder="Your Comment" rows="5" required></textarea>
+        <label for="name">Name:</label>
+        <input type="text" name="name" required />
+  
+        <label for="email">Email:</label>
+        <input type="email" name="email" required />
+  
+        <label for="comment">Comment:</label>
+        <textarea name="comment" required></textarea>
+  
         <button type="submit">Submit</button>
       </form>
-    </section>
-
-    <section class="contact-map">
-      <h2>Recent Comments</h2>
-      <ul id="comments-container" style="list-style-type: none; padding-left: 0;"></ul>
-    </section>
-  </main>
+    </div>
+  
+    <div class="card" style="margin-top: 2rem;">
+      <h2>Past Comments</h2>
+      <ul id="comments-container"></ul>
+    </div>
+  </main>  
 
   <footer></footer>
 </body>
