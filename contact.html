@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
   <script src="js/contact.js" defer></script>
+  <script src="js/form-handler.js" defer></script>
   <script src="js/includes.js" defer></script>
   <script src="js/header-scroll.js" defer></script>
 </head>
@@ -26,7 +27,7 @@
     <div class="contact-container">
       <section class="contact-form card">
         <h2>Contact Me</h2>
-        <form action="https://formspree.io/f/yourID" method="POST">
+        <form id="contact-form" action="https://formspree.io/f/xovenkdp" method="POST">
           <input type="text" name="name" placeholder="Name" required />
           <input type="email" name="email" placeholder="Email" required />
           <input type="text" name="subject" placeholder="Subject" />
