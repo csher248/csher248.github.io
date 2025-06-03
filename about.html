@@ -1,12 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  />
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>About | Connor Sheridan</title>
   <link rel="stylesheet" href="css/main.css" />
   <script src="js/includes.js" defer></script>
   <script src="js/header-scroll.js" defer></script>
+  <script src="js/scroll-fade.js" defer></script>
 </head>
 <body>
   <div class="site-header">
@@ -14,20 +19,21 @@
     <nav></nav>
   </div>
 
-  <main class="about-section">
-    <div class="card about-card">
+  <main class="about-wrapper">
+    <section class="card">
       <h1>About Me</h1>
-      <p>Hi, I’m <strong>Connor Sheridan</strong> — a software developer with a passion for building things that make life easier, smarter, or more fun.</p>
-      <p>I recently graduated from Michigan State University with a degree in Computer Science. I enjoy blending creativity and logic to create clean, useful digital experiences. I'm currently looking for opportunities where I can grow as a developer, work on meaningful projects, and contribute to a passionate team.</p>
-    </div>
-
-    <div class="about-flex">
-      <div class="card photo-card">
-        <img src="images/grad-photo.jpg" alt="Graduation Photo" class="profile-photo-large" />
-      </div>
-      <div class="card text-card">
-        <p>I enjoy writing, building personal projects, and exploring new tech tools. I'm actively looking for software engineering roles where I can continue to grow, collaborate, and build impactful products.</p>
-      </div>
+      <p>Hi, I’m <strong>Connor Sheridan</strong> — a passionate software developer driven by curiosity and a love for clean, purposeful design.</p>
+      <p>I recently earned my degree in Computer Science from Michigan State University and am actively looking for opportunities to apply my skills and grow as a developer.</p>
+    </section>
+  
+    <div class="home-container">
+      <section class="card about-left">
+        <img src="images/grad-photo.png" alt="Graduation" class="profile-photo-square" />
+      </section>
+  
+      <section class="card about-right">
+        <p>I recently graduated in 2025 and have been exploring various tools and frameworks. I'm eager to join a team that values innovation, learning, and building great software together.</p>
+      </section>
     </div>
   
     <section class="skills">
@@ -62,8 +68,7 @@
         </div>
       </div>
     </section>
-    
-  </main>
+  </main>  
 
   <footer></footer>
 </body>

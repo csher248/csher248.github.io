@@ -32,7 +32,6 @@ main {
   margin-bottom: 2rem;
 }
 
-/* Thank You Card */
 .thank-you-card {
   max-width: 600px;
   margin: auto;
@@ -114,34 +113,49 @@ main {
 /* ======================================
    Homepage Layout
 ====================================== */
+.home-left-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1 1 400px;
+  gap: 1rem;
+}
+
+.role-title {
+  margin-top: 0.5rem;
+  font-weight: 600;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.profile-photo-square {
+  width: 100%;
+  border-radius: 12px;
+  object-fit: cover;
+  display: block;
+}
+
+.home-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3rem;
+  max-width: 1100px;
+  margin: auto;
+  padding: 3rem 2rem;
+}
+
 .home-wrapper {
   max-width: 1200px;
   margin: auto;
   padding: 2rem;
 }
 
-.home-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
-  justify-content: center;
-  align-items: flex-start;
-}
-
-/* Layout: Left/Right cards */
 .home-left,
 .home-right {
   flex: 1 1 400px;
 }
 
-/* Make photo fill card more naturally */
-.profile-photo-square {
-  width: 100%;
-  border-radius: 10px;
-  object-fit: cover;
-}
-
-/* Button spacing */
 .home-left .btn-contact,
 .home-left .btn-download {
   display: block;
@@ -150,13 +164,11 @@ main {
   width: 80%;
 }
 
-/* Fun fact box spacing */
 .fun-fact-box {
   margin-top: 2rem;
   text-align: center;
 }
 
-/* Social Links */
 .social-links {
   display: flex;
   justify-content: center;
@@ -174,7 +186,6 @@ main {
   transform: scale(1.1);
 }
 
-/* Homepage Text */
 .home-right h1 {
   font-size: 2rem;
   margin-bottom: 0.5rem;
@@ -259,16 +270,72 @@ main {
 /* ======================================
    Feedback Page
 ====================================== */
+.feedback-wrapper {
+  max-width: 1100px;
+  margin: auto;
+  padding: 2rem;
+}
+
+.feedback-intro {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.feedback-left,
+.feedback-right {
+  flex: 1 1 400px;
+}
+
+#feedback-form {
+  display: grid;
+  gap: 1rem;
+}
+
+#feedback-form input,
+#feedback-form textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+#feedback-form button {
+  padding: 0.75rem;
+  border: none;
+  background-color: #333;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
 #comments-container li {
-  background-color: #f1f1f1;
-  margin-bottom: 1rem;
+  background-color: #f5f5f5;
   padding: 1rem;
-  border-radius: 8px;
+  margin-bottom: 1rem;
+  border-radius: 6px;
 }
 
 /* ======================================
    About Page & Skills
 ====================================== */
+.about-wrapper {
+  max-width: 1100px;
+  margin: auto;
+  padding: 2rem;
+}
+
+.profile-photo-square {
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.about-left,
+.about-right {
+  flex: 1 1 400px;
+}
+
 .about-section {
   max-width: 1100px;
   margin: auto;
