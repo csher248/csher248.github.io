@@ -114,25 +114,46 @@ main {
 /* ======================================
    Homepage Layout
 ====================================== */
+.home-wrapper {
+  max-width: 1200px;
+  margin: auto;
+  padding: 2rem;
+}
+
 .home-container {
   display: flex;
   flex-wrap: wrap;
+  gap: 2rem;
   justify-content: center;
   align-items: flex-start;
-  gap: 2rem;
-  max-width: 1100px;
-  margin: auto;
 }
 
-.home-left, .home-right {
+/* Layout: Left/Right cards */
+.home-left,
+.home-right {
   flex: 1 1 400px;
 }
 
-/* Profile Image */
-.profile-photo {
+/* Make photo fill card more naturally */
+.profile-photo-square {
   width: 100%;
-  border-radius: 12px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+/* Button spacing */
+.home-left .btn-contact,
+.home-left .btn-download {
   display: block;
+  margin: 0.75rem auto 0;
+  text-align: center;
+  width: 80%;
+}
+
+/* Fun fact box spacing */
+.fun-fact-box {
+  margin-top: 2rem;
+  text-align: center;
 }
 
 /* Social Links */
